@@ -1,6 +1,12 @@
 import cx from "classnames";
 
-export default function Chat({ message, onChange, onSubmit, chatHistory }) {
+export default function Chat({
+  message,
+  onChange,
+  onSubmit,
+  isButtonDisabled,
+  chatHistory,
+}) {
   return (
     <div className="h-full pb-7 flex flex-col justify-between">
       <div className="chat-area px-3 flex flex-col overflow-auto">
@@ -37,20 +43,21 @@ export default function Chat({ message, onChange, onSubmit, chatHistory }) {
         })}
       </div>
 
-      <div className="flex gap-2 px-3">
+      <form className="flex gap-2 px-3">
         <textarea
           onChange={onChange}
           value={message}
           className="w-full h-20 border border-gray-300 rounded p-2"
         />
         <button
+          type="submit"
           onClick={onSubmit}
-          disabled={!message}
+          disabled={!message || isButtonDisabled}
           className="bg-gray-700 text-white rounded px-4 transition-colors disabled:bg-gray-300"
         >
           Enviar
         </button>
-      </div>
+      </form>
     </div>
   );
 }

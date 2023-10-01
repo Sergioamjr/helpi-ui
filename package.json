@@ -16,6 +16,7 @@
     "@iconscout/react-unicons": "^2.0.2",
     "classnames": "^2.3.2",
     "css.gg": "^2.1.1",
+    "langchain": "^0.0.156",
     "lottie-web": "^5.12.2",
     "next": "latest",
     "react": "latest",
