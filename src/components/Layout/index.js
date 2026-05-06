@@ -9,22 +9,7 @@ export default function Layout({ children }) {
           <h1 className="text-white">Helpi</h1>
           <ul className="flex">
             <li className="ml-7">
-              <a className="text-white" href="#">
-                Home
-              </a>
-            </li>
-            <li className="ml-7">
-              <a className="text-white" href="#">
-                Home
-              </a>
-            </li>
-            <li className="ml-7">
-              <a className="text-white" href="#">
-                Home
-              </a>
-            </li>
-            <li className="ml-7">
-              <a className="text-white" href="#">
+              <a className="text-white" href="/">
                 Home
               </a>
             </li>
