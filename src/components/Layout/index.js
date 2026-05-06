@@ -10,7 +10,7 @@ export default function Layout({ children }) {
           <ul className="flex">
             <li className="ml-7">
               <a className="text-white" href="/">
-                Home
+                Início
               </a>
             </li>
           </ul>
