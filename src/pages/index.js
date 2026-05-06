@@ -35,24 +35,6 @@ export default function Home() {
     <Layout>
       <section className="pb-9">
         <div className="max-w-[600px] px-4 m-auto">
-          <p className="mb-4">Olá, Sérgio, como está se sentindo hoje?</p>
-          <div className="flex items-center gap-6 justify-between mb-5">
-            <button className="rounded bg-blue-400 w-20 h-20">
-              <FontAwesomeIcon className="text-white" icon={faFaceLaugh} />
-            </button>
-            <button className="rounded bg-blue-400  w-20 h-20">
-              <FontAwesomeIcon className="text-white" icon={faFaceSmileBeam} />
-            </button>
-            <button className="rounded bg-blue-400  w-20 h-20">
-              <FontAwesomeIcon className="text-white" icon={faFaceMeh} />
-            </button>
-            <button className="rounded bg-blue-400  w-20 h-20">
-              <FontAwesomeIcon className="text-white" icon={faFaceFrownOpen} />
-            </button>
-            <button className="rounded bg-blue-400  w-20 h-20">
-              <FontAwesomeIcon className="text-white" icon={faFaceFrown} />
-            </button>
-          </div>
           <div className="animation" ref={el} />
           <div className="mb-6">
             <Link
