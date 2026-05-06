@@ -1,5 +1,6 @@
 import { Open_Sans } from "next/font/google";
 const inter = Open_Sans({ subsets: ["latin"] });
+import Link from 'next/link'
 
 export default function Layout({ children }) {
   return (
@@ -9,9 +10,9 @@ export default function Layout({ children }) {
           <h1 className="text-white">Helpi</h1>
           <ul className="flex">
             <li className="ml-7">
-              <a className="text-white" href="/">
+              <Link className="text-white" href="/">
                 Início
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
